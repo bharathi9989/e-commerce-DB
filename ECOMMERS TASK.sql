@@ -145,6 +145,14 @@ where products.name = 'products A';
 select cus.name, ord.order_date
 from orders as ord
 join customers as cus on ord.customer_id = cus.id;
+select *from ECOMMERCE_TASK;
 
+-- 8. Retrieve the orders with a total amount greater than 150.00.
+select * from orders where total_amount > 150.00;
+
+-- Retrieve the average total of all orders.
+
+select avg(total_amount) as average_order_total
+from orders;  			-- avrage_order_total  200.00 
 
 
